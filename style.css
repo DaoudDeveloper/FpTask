@@ -1,0 +1,116 @@
+h2.red-text {
+    color: red;
+}
+.border-end {
+height: 75px;
+
+}
+@media (max-width:767px) {
+
+    .border-end
+    {
+      border:0px solid !important
+      }
+
+
+    }
+    
+    div.bg-cyan {
+        background-color: #00ACEA; 
+    }
+    div.bg-awards {
+        background-color: #F6F7FB; 
+    }
+
+    h2{
+  margin-bottom: 0px;
+}
+p{
+  margin-top: 0px;
+}
+p.small-print{
+font-size: small;
+}
+h3.no-pad {
+  margin-bottom: 0;
+}
+
+
+
+.ribbon {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  border: 3px solid #1eb5ff;
+}
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 165px;
+  padding: 5px 0;
+  background-color: #E4354E;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+
+.ribbon-top-left {
+  top: -55px;
+  left: -53px;
+}
+.ribbon-top-left::before,
+.ribbon-top-left::after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.ribbon-top-left::before {
+  top: 0;
+  right: 0;
+}
+.ribbon-top-left::after {
+  bottom: 0;
+  left: 0;
+}
+.ribbon-top-left span {
+  right: -82px;
+  top: 80px;
+  transform: rotate(-45deg);
+}
+
+/* top right*/
+.ribbon-top-right {
+  top: -2px;
+  right: -2px;
+}
+.ribbon-top-right::before,
+.ribbon-top-right::after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+.ribbon-top-right::before {
+  top: 0;
+  left: 0;
+}
+.ribbon-top-right::after {
+  bottom: 0;
+  right: 0;
+}
+.ribbon-top-right span {
+  left: -19px;
+  top: 30px;
+  transform: rotate(45deg);
+}
+@media only screen and (max-width: 768px) {
+  .navbar-brand {
+    left: 50%;
+    padding-left: 90px;
+    
+  }
+}
